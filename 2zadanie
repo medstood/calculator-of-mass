@@ -1,23 +1,26 @@
+
+
+
 package org.example;
 
-        import java.util.Scanner;
+import java.util.Scanner;
 
-        public class Main {
-        public static void main(String[] args) {
+public class Main {
+    public static void main(String[] args) {
         var scanner = new Scanner(System.in);
 
         System.out.println("What is price for 1 kg?");
         var priceforkg = scanner.nextDouble();
 
         while (true) {
-        System.out.println("What is weight of your package?");
-        var mass = scanner.nextDouble();
+            System.out.println("What is weight of your package?");
+            var mass = scanner.nextDouble();
 
-        if (mass == 0)
-        break;
+            if (mass == 0)
+                break;
 
-        var result = mass * priceforkg;
-        System.out.println("Result = " + result);
+            var result = mass * priceforkg;
+            System.out.println("Price for all package = " + result);
         }
-        }
-        }
+    }
+}
